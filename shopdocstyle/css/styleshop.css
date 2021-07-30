@@ -495,3 +495,92 @@ h4.footer-title {
   display: block;
 }
 /* ENd modal ti bag */
+/* modal login start */
+.modal__login {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  display: none;
+}
+
+.modal__login-container {
+  position: fixed;
+  top: 130px;
+  margin-left: 25%;
+  animation: showModalLogin ease 0.6s;
+}
+
+.modal__login-header {
+  width: 800px;
+  height: 120px;
+  background-color: #fff;
+}
+
+.modal__login-header-title {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 30px;
+}
+
+.modal__login-body {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+}
+
+.modal__login-input {
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.modal__login-footer {
+  background-color: #bfc7c7;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.login__btn {
+  height: 80px;
+  width: 150px;
+  margin-top: 10px;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.login__btn:hover {
+  background-color: darkgrey;
+  cursor: pointer;
+}
+
+.login__help {
+  margin-top: 10px;
+}
+
+.login__help-content {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.modal__login.open {
+  display: block;
+}
+
+@keyframes showModalLogin {
+  from {
+    opacity: 0.3;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* modal login END */
